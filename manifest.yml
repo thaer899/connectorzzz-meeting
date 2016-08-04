@@ -1,0 +1,16 @@
+declared-services:
+  ipa-dialog_service:
+    label: dialog
+    plan: standard
+  ipa-nlc_service:
+    label: natural_language_classifier
+    plan: standard
+applications:
+- services:
+  - ipa-nlc_service
+  - ipa-dialog_service
+  name: connectorzzz-meeting
+  command: npm start
+  path: .
+  memory: 512M
+  name: connectorzzz-meeting
